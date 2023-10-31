@@ -312,8 +312,8 @@ footer input[type="email"] {
     position: absolute;
     bottom: 0; /* Alinea el contenido en la parte inferior del banner */
     left: 0; /* Alinea el contenido en la parte izquierda del banner */
-    margin-top: 110px;
-    font-size: 28px;
+    margin-top: 90px;
+    font-size: 20px;
   }
   #new-collection-banner {
     margin-top: 20px; /* Añade espacio entre las tarjetas y el banner */
