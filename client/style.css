@@ -1,0 +1,351 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* 
+header {
+  background-color: #ffffffad;
+
+  position: fixed;
+  z-index: 1000;
+  top: 30px;
+  left: 80px;
+  width: 92%;
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+/* Estilos de encabezado para pantallas grandes (desktop) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffffad;
+  position: fixed;
+  z-index: 1000;
+  top: 30px;
+  left: 40px; /* Ajusta el espacio izquierdo en pantallas de escritorio */
+  right: 40px; /* Ajusta el espacio derecho en pantallas de escritorio */
+  width: calc(100% - 80px); /* Resta los márgenes izquierdo y derecho */
+  padding: 10px 35px;
+}
+header:hover {
+  background-color: #ffffffe8;
+  transition: 0.8s;
+}
+#menu-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #000000;
+  cursor: pointer;
+}
+/* Oculta los botones en pantallas grandes (desktop) */
+
+.logo {
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+#cart-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #000000;
+  cursor: pointer;
+}
+
+#menu-button,
+#cart-button {
+  display: none;
+}
+
+.nav {
+  margin: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 35px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.user-icons a {
+  margin-left: 20px;
+  color: #000000;
+}
+/* ... Tu CSS existente ... */
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+}
+
+.menu-item.active .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  margin: 5px;
+}
+
+.sub-menu a {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background-color: #ffffffe8;
+  transition: 0.8s;
+}
+
+nav ul li ul li {
+  padding: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: black;
+  color: white;
+  height: 20vh;
+  overflow: hidden;
+}
+
+.input {
+  background-color: #f8f6f6;
+  border: none;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  padding: 20px;
+  font-size: 28px;
+}
+
+footer input[type="email"] {
+  width: 45vh;
+  padding: 15px;
+  border: 1px solid #f8f6f6;
+  background-color: #f8f6f6;
+}
+
+.button {
+  background-color: #f8f6f6;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.email {
+  color: black;
+}
+::placeholder {
+  color: black;
+  font-size: 15px;
+}
+
+#image-carousel {
+  width: 100%;
+  height: 100vh; /* Establece la altura al 20% de la página verticalmente */
+  overflow: hidden;
+  position: relative;
+}
+
+#image-carousel img {
+  width: 100%;
+  height: 100vh; /* Ajusta la altura al 100% para ocupar todo el espacio disponible */
+  position: absolute;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#image-carousel img.active {
+  opacity: 1;
+}
+
+.contenedor-card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0px;
+  /* Establece el margen superior igual a la altura del "image-carousel" para evitar la superposición. */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 443px;
+  height: 593px;
+
+  margin: 100px;
+  margin-top: 35px;
+
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-info {
+  text-align: left;
+  padding: 10px;
+  flex-grow: 1; /* Para que ocupe el espacio restante */
+  width: 80%;
+}
+
+.card h2,
+.card p {
+  margin: 0;
+}
+.section-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.offer-label {
+  background-color: #000000;
+  color: white;
+  position: absolute;
+  padding: 5px;
+  padding-right: 28px;
+
+  top: 17px;
+  right: 0;
+}
+.discount-price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#del {
+  color: #888888b6;
+}
+.heart-button {
+  position: absolute;
+  margin-bottom: 20px;
+  right: 13px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#new-collection-banner {
+  position: relative;
+  overflow: hidden;
+  text-align: left; /* Alinea el contenido hacia la izquierda */
+  width: 100%;
+  max-height: 50vh;
+}
+
+#new-collection-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 70px; /* Ajusta el valor según tu preferencia para la posición izquierda */
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0);
+  padding: 10px;
+  text-align: left; /* Alinea el texto hacia la izquierda */
+  border-radius: 5px;
+  color: white;
+}
+
+.banner-content h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.ver-mas-link {
+  text-decoration: underline;
+  color: #ffffff;
+
+  display: block;
+
+  text-align: left; /* Alinea el enlace hacia la izquierda */
+}
+
+/* Oculta los elementos de navegación en pantallas pequeñas (mobile) */
+@media screen and (max-width: 768px) {
+  #menu-button,
+  #cart-button {
+    display: block;
+  }
+
+  /* Oculta los elementos de navegación en pantallas pequeñas (mobile) */
+  .nav {
+    display: none;
+  }
+
+  .contenedor-card {
+    display: block; /* Cambiamos la disposición a columna */
+    margin: 0; /* Eliminamos el margen para ocupar todo el ancho */
+  }
+
+  .card {
+    height: 25%;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 0; /* Eliminamos cualquier margen horizontal */
+    margin-bottom: 20px; /* Espacio vertical entre las tarjetas */
+    /* ... Otros estilos adicionales para pantallas móviles ... */
+  }
+
+  .heart-button {
+    margin-bottom: 70px;
+  }
+  .banner-content {
+    text-align: left; /* Alinea el texto hacia la izquierda */
+    position: absolute;
+    bottom: 0; /* Alinea el contenido en la parte inferior del banner */
+    left: 0; /* Alinea el contenido en la parte izquierda del banner */
+    margin-top: 110px;
+    font-size: 28px;
+  }
+  #new-collection-banner {
+    margin-top: 20px; /* Añade espacio entre las tarjetas y el banner */
+  }
+  #new-collection-banner img {
+    width: 100%;
+    height: 600px; /* Ajusta la altura según tu preferencia */
+  }
+}
+
+/* Con estos cambios, los botones de menú y carrito se ubicarán a los lados del título del logo en el centro, y los elementos de navegación se ocultarán en pantallas pequeñas (modo móvil). El diseño se adaptará automáticamente cuando la pantalla se achique. */
