@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "SF Pro Display Light Italic";
+  src: url("tipografias/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+}
+
+body {
+  font-family: "SF Pro Display Light Italic";
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -26,7 +35,7 @@ header:hover {
 #menu-button {
   background: none;
   border: none;
-  font-size: 24px;
+
   color: #000000;
   cursor: pointer;
 }
@@ -40,7 +49,6 @@ header:hover {
 #cart-button {
   background: none;
   border: none;
-  font-size: 24px;
   color: #000000;
   cursor: pointer;
 }
@@ -69,7 +77,6 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: #000000;
-  font-weight: bold;
 }
 
 .user-icons a {
@@ -203,10 +210,6 @@ footer input[type="email"] {
   width: 80%;
 }
 
-.card h2,
-.card p {
-  margin: 0;
-}
 .section-title {
   display: flex;
   text-align: center;
