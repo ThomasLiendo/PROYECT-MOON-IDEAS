@@ -26,7 +26,7 @@ header {
   left: 40px; /* Ajusta el espacio izquierdo en pantallas de escritorio */
   right: 40px; /* Ajusta el espacio derecho en pantallas de escritorio */
   width: calc(100% - 80px); /* Resta los márgenes izquierdo y derecho */
-  padding: 10px 35px;
+  padding: 20px 35px;
 }
 header:hover {
   background-color: #ffffffe8;
@@ -71,17 +71,18 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 35px;
+  margin-left: 65px;
 }
 
 nav a {
   text-decoration: none;
   color: #000000;
 }
-
+.user-icons {
+  margin-left: 40px;
+}
 .user-icons a {
-  margin-left: 20px;
-  color: #000000;
+  margin-left: 30px;
 }
 
 .sub-menu {
@@ -150,6 +151,7 @@ footer input[type="email"] {
   border: none;
   padding: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
 .email {
   color: black;
@@ -181,22 +183,22 @@ footer input[type="email"] {
 
 .contenedor-card {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
-  margin: 0px;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  margin-left: 10px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 443px;
-  height: 593px;
-
-  margin: 100px;
-  margin-top: 35px;
-
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px; /* Espacio entre las tarjetas */
   text-align: center;
   position: relative;
+  flex: 0 0 calc(33.33% - 20px); /* Divide el espacio en 3 columnas (ajusta según tus necesidades) */
 }
 
 .card img {
@@ -207,7 +209,10 @@ footer input[type="email"] {
   text-align: left;
   padding: 10px;
   flex-grow: 1;
-  width: 80%;
+}
+
+.card-info h2 {
+  font-weight: normal;
 }
 
 .section-title {
@@ -215,6 +220,10 @@ footer input[type="email"] {
   text-align: center;
   justify-content: center;
   margin-top: 150px;
+}
+
+.section-title h3 {
+  font-weight: normal;
 }
 
 .offer-label {
@@ -269,19 +278,20 @@ footer input[type="email"] {
   text-align: left;
   border-radius: 5px;
   color: white;
+  font-weight: normal;
 }
 
 .banner-content h2 {
   font-size: 24px;
   margin: 0;
+  font-weight: normal;
 }
 
 .ver-mas-link {
   text-decoration: underline;
   color: #ffffff;
-
+  font-weight: normal;
   display: block;
-
   text-align: left;
 }
 
@@ -294,17 +304,20 @@ footer input[type="email"] {
   .nav {
     display: none;
   }
-
+  .section-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   .contenedor-card {
     display: block;
-    margin: 0;
+    margin: 15px;
   }
 
   .card {
     height: 25%;
     width: 100%;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 
   .heart-button {
@@ -327,9 +340,7 @@ footer input[type="email"] {
   }
   .input {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+
     width: 100%;
   }
   .footer {
@@ -338,15 +349,15 @@ footer input[type="email"] {
   }
 
   .footer p {
-    font-size: 18px; /* Reduce el tamaño de fuente en dispositivos móviles si es necesario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 25px; /* Reduce el tamaño de fuente en dispositivos móviles si es necesario */
   }
 
   .footer input[type="email"] {
     width: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
-  }
-
-  .button {
-    margin-top: 10px; /* Añade espacio superior para el botón en dispositivos móviles */
   }
 }
 
