@@ -23,8 +23,8 @@ header {
   position: fixed;
   z-index: 1000;
   top: 30px;
-  left: 40px; /* Ajusta el espacio izquierdo en pantallas de escritorio */
-  right: 40px; /* Ajusta el espacio derecho en pantallas de escritorio */
+  left: 40px;
+  right: 40px;
   width: calc(100% - 80px); /* Resta los márgenes izquierdo y derecho */
   padding: 20px 35px;
 }
@@ -160,10 +160,10 @@ nav ul li ul li {
   flex-direction: column;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-right: 15px; /* Espacio entre las tarjetas */
+  margin-right: 15px;
   text-align: center;
   position: relative;
-  flex: 0 0 calc(33.33% - 20px); /* Divide el espacio en 3 columnas (ajusta según tus necesidades) */
+  flex: 0 0 calc(33.33% - 20px); /* Divide el espacio en 3 columnas */
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -331,17 +331,17 @@ footer input[type="email"] {
   .banner-content {
     text-align: left; /* Alinea el texto hacia la izquierda */
     position: absolute;
-    bottom: 0; /* Alinea el contenido en la parte inferior del banner */
-    left: 0; /* Alinea el contenido en la parte izquierda del banner */
+    bottom: 0;
+    left: 0;
     margin-top: 90px;
     font-size: 20px;
   }
   #new-collection-banner {
-    margin-top: 20px; /* Añade espacio entre las tarjetas y el banner */
+    margin-top: 20px;
   }
   #new-collection-banner img {
     width: 100%;
-    height: 600px; /* Ajusta la altura según tu preferencia */
+    height: 600px;
   }
   .input {
     display: flex;
@@ -349,8 +349,8 @@ footer input[type="email"] {
     width: 100%;
   }
   .footer {
-    height: auto; /* Establece la altura automática para el contenido móvil */
-    padding: 20px; /* Añade espacio interno para el contenido móvil */
+    height: auto;
+    padding: 20px;
   }
 
   .footer p {
@@ -358,12 +358,10 @@ footer input[type="email"] {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    font-size: 25px; /* Reduce el tamaño de fuente en dispositivos móviles si es necesario */
+    font-size: 25px;
   }
 
   .footer input[type="email"] {
-    width: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
+    width: 100%;
   }
 }
-
-/* Con estos cambios, los botones de menú y carrito se ubicarán a los lados del título del logo en el centro, y los elementos de navegación se ocultarán en pantallas pequeñas (modo móvil). El diseño se adaptará automáticamente cuando la pantalla se achique. */

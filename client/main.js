@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Con estos cambios, el submenú se mostrará cuando se haga clic en "Shop" y se ocultará cuando se vuelva a hacer clic en él. El JavaScript agrega o quita la clase "active" en el elemento "Shop" para controlar la visibilidad del submenú. Puedes personalizar los estilos y la animación según tus preferencias.
+//Con estos cambios, el submenú se mostrará cuando se haga clic en "Shop" y se ocultará cuando se vuelva a hacer clic en él. El codigo agrega o quita la clase "active" en el elemento "Shop" para controlar la visibilidad del submenú.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 document.addEventListener("DOMContentLoaded", function () {
   const shopItem = document.querySelector(".menu-item");
   const subMenuShop = shopItem.querySelector(".sub-menu");
@@ -50,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     e.stopPropagation(); // Evitar que el evento de clic en el documento se propague
   });
-
   nuevaColeccionItem.addEventListener("click", function (e) {
     e.preventDefault(); // Evitar que el enlace de "Nueva Colección" se siga cuando haces clic
     isNuevaColeccionMenuOpen = !isNuevaColeccionMenuOpen;
@@ -82,5 +84,3 @@ document.addEventListener("DOMContentLoaded", function () {
     e.stopPropagation();
   });
 });
-
-//Con estos ajustes, el submenú de "Nueva Colección" debería abrirse y cerrarse correctamente al hacer clic, y se asegurará de que si un submenú está abierto, el otro se cierre automáticamente.
