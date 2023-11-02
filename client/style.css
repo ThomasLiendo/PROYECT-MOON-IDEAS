@@ -39,7 +39,6 @@ header:hover {
   color: #000000;
   cursor: pointer;
 }
-/* Oculta los botones en pantallas grandes (desktop) */
 
 .logo {
   font-size: 24px;
@@ -116,50 +115,6 @@ nav a {
 nav ul li ul li {
   padding: 10px;
 }
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  background: black;
-  color: white;
-  height: 20vh;
-  overflow: hidden;
-}
-
-.input {
-  background-color: #f8f6f6;
-  border: none;
-}
-
-footer p {
-  padding: 20px;
-  font-size: 28px;
-}
-
-footer input[type="email"] {
-  width: 45vh;
-  padding: 15px;
-  border: 1px solid #f8f6f6;
-  background-color: #f8f6f6;
-}
-
-.button {
-  background-color: #f8f6f6;
-  color: black;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.email {
-  color: black;
-}
-::placeholder {
-  color: black;
-  font-size: 15px;
-}
 
 #image-carousel {
   width: 100%;
@@ -179,6 +134,16 @@ footer input[type="email"] {
 
 #image-carousel img.active {
   opacity: 1;
+}
+.section-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.section-title h3 {
+  font-weight: normal;
 }
 
 .contenedor-card {
@@ -211,9 +176,6 @@ footer input[type="email"] {
   width: 100%;
 }
 
-.card img:hover {
-}
-
 .card-info {
   text-align: left;
   padding: 10px;
@@ -221,17 +183,6 @@ footer input[type="email"] {
 }
 
 .card-info h2 {
-  font-weight: normal;
-}
-
-.section-title {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: 150px;
-}
-
-.section-title h3 {
   font-weight: normal;
 }
 
@@ -302,6 +253,51 @@ footer input[type="email"] {
   font-weight: normal;
   display: block;
   text-align: left;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: black;
+  color: white;
+  height: 20vh;
+  overflow: hidden;
+}
+
+.input {
+  background-color: #f8f6f6;
+  border: none;
+}
+
+footer p {
+  padding: 20px;
+  font-size: 28px;
+}
+
+footer input[type="email"] {
+  width: 45vh;
+  padding: 15px;
+  border: 1px solid #f8f6f6;
+  background-color: #f8f6f6;
+}
+
+.button {
+  background-color: #f8f6f6;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.email {
+  color: black;
+}
+::placeholder {
+  color: black;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
